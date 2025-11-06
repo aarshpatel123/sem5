@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+</head>
+<body>
+
+<h1>Upload File</h1>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Upload</button>
+</form>
+
+<hr>
+
+<h2>Uploaded Files:</h2>
+<ul>
+    {% for file in files %}
+        <li><a href="/uploads/{{ file }}" target="_blank">{{ file }}</a></li>
+    {% else %}
+        <li>No files uploaded yet.</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
