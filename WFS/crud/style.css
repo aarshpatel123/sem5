@@ -1,0 +1,60 @@
+@keyframes fadeinall {
+    0% {
+        opacity: 1;
+    }
+
+    97% {
+        opacity: 0;
+    }
+
+    98% {
+        opacity: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        width: 100%;
+    }
+}
+
+.dt-length select {
+    margin-right: 12px;
+}
+
+.dt-input {
+    margin: 0 12px !important;
+}
+
+form {
+    width: 400px;
+}
+
+header {
+    transform: translate(-50%);
+}
+
+footer {
+    transform: translate(-50%, -50%);
+}
+
+button {
+    transition: all 0.3s linear;
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+.dt-info {
+    padding: 0 12px;
+}
